@@ -1,0 +1,9 @@
+package net.colegio.interfaces;
+
+import java.util.List;
+
+import net.colegio.entity.Bien;
+
+public interface BienDAO{
+	List<Bien> findAllBienByTipo(int codTipo);
+}

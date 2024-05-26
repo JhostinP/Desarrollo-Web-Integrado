@@ -1,0 +1,8 @@
+package net.colegio.interfaces;
+import java.util.*;
+import net.colegio.entity.Colegio;
+
+public interface ColegioDAO {
+	public List<Colegio> findAll();
+	
+}

@@ -1,0 +1,5 @@
+INDEX VERSION 1.134
+C:\Users\Jhostin PC\Desktop\PROYECTO WEB\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4010119036.index
+\DWI-Semana09\src\main\java
+C:\Users\Jhostin PC\Desktop\PROYECTO WEB\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4008558826.index
+\DWI-Semana09\src\main\java

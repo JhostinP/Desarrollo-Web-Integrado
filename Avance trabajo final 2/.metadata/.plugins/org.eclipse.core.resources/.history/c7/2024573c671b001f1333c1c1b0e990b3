@@ -1,0 +1,45 @@
+package net.colegio.dao;
+
+import java.sql.*;
+import java.util.*;
+
+import net.colegio.entity.Colegio;
+import net.colegio.interfaces.ColegioDAO;
+import net.colegio.utils.MySqlConectar;
+
+public class MySqlColegioDAO implements ColegioDAO {
+
+	@Override
+	public List<Colegio> findAll() {
+		List<Colegio> data=new ArrayList<Colegio>();
+		Colegio bean=null;
+		Connection cn=null;
+		PreparedStatement pstm=null;
+		ResultSet rs=null;
+		try {
+			cn=new MySqlConectar().getConectar();
+			String sql="select *from tb_colegio";
+			pstm=cn.prepareStatement(sql);
+			rs=pstm.executeQuery();
+			while(rs.next()) {
+				bean=new Colegio();
+				bean.setCodigo(rs.getInt(1));
+				bean.setNombre(rs.getString(2));
+				data.add(bean);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if(rs!=null) rs.close();
+				if(pstm!=null) pstm.close();
+				if(cn!=null) cn.close();
+			} catch (Exception e2) {
+				e2.printStackTrace();
+			}
+		}
+		return data;
+
+	}
+
+}

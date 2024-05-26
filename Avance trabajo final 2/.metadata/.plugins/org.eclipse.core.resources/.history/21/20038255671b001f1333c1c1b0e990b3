@@ -1,0 +1,73 @@
+package net.colegio.controlador;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.google.gson.Gson;
+
+import net.colegio.entity.Detalle;
+
+
+@WebServlet("/ServletRequerimiento")
+public class ServletRequerimiento extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    
+    public ServletRequerimiento() {
+        super();
+        
+    }
+	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String tipo = request.getParameter("accion");
+		if(tipo.equals("ADICIONAR"))
+			adicionar(request,response);
+	}
+	private void adicionar(HttpServletRequest request, HttpServletResponse response) throws IOException {
+		String cod = request.getParameter("codigo");
+		String des = request.getParameter("descripcion");
+		String can = request.getParameter("cantidad");
+		//declarar arreglo de objetos de la clase Detalle
+		List<Detalle> lista = null;
+		//validar si existe atributo de tipo sesion "carrito"
+		if(request.getSession().getAttribute("carrito")==null)//no existe
+			//crear arreglo lista
+			lista = new ArrayList<Detalle>();
+		else //si existe
+			//recuperar arreglo del atributo sesion "carrito"
+			lista = (List<Detalle>) request.getSession().getAttribute("carrito");
+		
+		
+		//crear objeto de la clase Detalle
+		Detalle det = new Detalle();
+		//setear atributos del objeto "det" con las variables
+		det.setCodigo(Integer.parseInt(cod));
+		det.setDescripcion(des);
+		det.setCantidad(Integer.parseInt(can));
+		//adicionar objeto "det" dentro del arreglo "lista"
+		lista.add(det);
+		
+		
+		//crear o actualizar atibuto carrito
+		request.setAttribute("carrito", lista);
+		
+		//
+		Gson gson=new Gson();
+		
+		String json=gson.toJson(lista);
+		
+		response.setContentType("application/json;charset=UTF-8");
+		//
+		PrintWriter pw=response.getWriter();
+		pw.print(json);	
+		
+	}
+
+}

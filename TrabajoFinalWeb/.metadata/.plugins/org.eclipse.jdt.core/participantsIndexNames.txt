@@ -1,0 +1,7 @@
+INDEX VERSION 1.134
+C:\Users\Jhostin PC\Desktop\TrabajoFinalWeb\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2374310598.index
+\ProyectoJakartaServlet1\src\main\java
+C:\Users\Jhostin PC\Desktop\TrabajoFinalWeb\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2463140450.index
+\ProyectaJakartaServerPages2\src\main\java
+C:\Users\Jhostin PC\Desktop\TrabajoFinalWeb\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1072316714.index
+\ProyectoJakarteServerPages2\src\main\java

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTP</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a la Universidad UTPo</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">Acerca de Nosotros</a></li>
+            <li><a href="#programs">Programas Académicos</a></li>
+            <li><a href="#admissions">Admisiones</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>Acerca de Nosotros</h2>
+            <p>La Universidad Ejemplo es una institución dedicada a la excelencia académica...</p>
+        </section>
+        <section id="programs">
+            <h2>Programas Académicos</h2>
+            <p>Ofrecemos una variedad de programas de pregrado y posgrado...</p>
+        </section>
+        <section id="admissions">
+            <h2>Admisiones</h2>
+            <p>Conoce nuestros requisitos de admisión y cómo aplicar...</p>
+        </section>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>Para más información, puedes contactarnos a través de...</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Universidad UTP. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

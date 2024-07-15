@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="javax.faces.bean.ManagedBean"/>
+    <fullyQualifiedTypeName name="javax.faces.bean.RequestScoped"/>
+    <fullyQualifiedTypeName name="jakarta.faces.event.NamedEvent"/>
+    <fullyQualifiedTypeName name="jakarta.annotation.ManagedBean"/>
+    <fullyQualifiedTypeName name="jakarta.faces.bean.SessionScoped"/>
+    <fullyQualifiedTypeName name="jakarta.ws.rs.core.Application"/>
+    <fullyQualifiedTypeName name="jakarta.ws.rs.ApplicationPath"/>
+</qualifiedTypeNameHistroy>

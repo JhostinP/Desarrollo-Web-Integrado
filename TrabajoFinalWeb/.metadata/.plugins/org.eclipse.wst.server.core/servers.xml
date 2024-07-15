@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v10.1 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v10.1 Server at localhost" name="Tomcat v10.1 Server at localhost" runtime-id="Apache Tomcat v10.1" server-type="org.eclipse.jst.server.tomcat.101" server-type-id="org.eclipse.jst.server.tomcat.101" start-timeout="60" stop-timeout="15" testEnvironment="true" timestamp="16">
+    <list key="modules" value0="ProyectoJakartaServlet1::org.eclipse.jst.jee.server:ProyectoJakartaServlet1::jst.web::6.0" value1="ProyectaJakartaServerPages2::org.eclipse.jst.jee.server:ProyectaJakartaServerPages2::jst.web::6.0" value2="demoJakarta10JSF-master::org.eclipse.jst.jee.server:demoJakarta10JSF-master::jst.web::6.0" value3="jakartaee-faces-sample-master::org.eclipse.jst.jee.server:jakartaee-faces-sample-master::jst.web::6.0" value4="ProyectoJakartaRest4::org.eclipse.jst.jee.server:ProyectoJakartaRest4::jst.web::5.0"/>
+  </server>
+</servers>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad Ejemplo - Página de Inicio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a la Universidad Ejemplo</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">Acerca de Nosotros</a></li>
+            <li><a href="#programs">Programas Académicos</a></li>
+            <li><a href="#admissions">Admisiones</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>Acerca de Nosotros</h2>
+            <p>La Universidad Ejemplo es una institución dedicada a la excelencia académica...</p>
+        </section>
+        <section id="programs">
+            <h2>Programas Académicos</h2>
+            <p>Ofrecemos una variedad de programas de pregrado y posgrado...</p>
+        </section>
+        <section id="admissions">
+            <h2>Admisiones</h2>
+            <p>Conoce nuestros requisitos de admisión y cómo aplicar...</p>
+        </section>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>Para más información, puedes contactarnos a través de...</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Universidad Ejemplo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+Paso 4: Añadir un Archivo de Estilos (Opcional)
+Para darle un mejor aspecto a la página, podemos añadir un archivo CSS.
+
+En el Project Explorer, expande tu proyecto y navega hasta WebContent.
+Crea una nueva carpeta llamada css.
+Dentro de css, crea un archivo llamado styles.css.
+Código del Archivo CSS (styles.css)
+css
+Copiar código
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #cccccc;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #003366;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
